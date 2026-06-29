@@ -1,0 +1,39 @@
+{
+  "organization": {
+    "name": "Chengdu Baobao Intelligent Technology Co., Ltd.",
+    "name_zh": "成都保堡智能科技有限公司",
+    "type": "Business Digital Services Company",
+    "description": "Business Digital Services, Overseas Business Presentation, and Technical Support.",
+    "description_zh": "专注于企业数字化服务、海外展示及技术支持。",
+    "services": [
+      "Business Digital Services",
+      "Corporate Website Development",
+      "Bilingual Company Profile",
+      "Overseas Business Presentation",
+      "Product Showcase",
+      "Technical Support",
+      "Website Maintenance"
+    ],
+    "industries": [
+      "Manufacturing",
+      "Trading",
+      "Service Businesses",
+      "Technology Companies",
+      "Growing Businesses"
+    ],
+    "contact": {
+      "contact_person": "Li",
+      "phone": "+86 18398798123",
+      "wechat": "18398798123",
+      "city": "Chengdu",
+      "province": "Sichuan",
+      "country": "China"
+    },
+    "languages": [
+      "Chinese",
+      "English"
+    ],
+    "website_type": "Official Corporate Website",
+    "repository": "business-digital-services"
+  }
+}
