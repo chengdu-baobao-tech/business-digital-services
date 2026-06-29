@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chengdu-baobao-tech.github.io/business-digital-services/sitemap.xml
