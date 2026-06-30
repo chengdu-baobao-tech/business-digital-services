@@ -1,49 +1,393 @@
-# company.html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-## 公司介绍
+  <title>公司介绍｜成都保堡智能科技有限公司</title>
+  <meta name="description" content="成都保堡智能科技有限公司专注于企业数字化服务、海外展示、双语企业资料、产品展示、网站维护及技术支持。" />
 
-# 成都保堡智能科技有限公司
+  <meta property="og:title" content="公司介绍｜成都保堡智能科技有限公司" />
+  <meta property="og:description" content="Helping businesses build a clear, trusted, and sustainable digital presence." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://china.bb369tech.com/company.html" />
 
-### 企业数字化服务 · 海外展示 · 技术支持
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+      color: #1f2937;
+      background: #ffffff;
+      line-height: 1.7;
+    }
 
-成都保堡智能科技有限公司专注于企业数字化服务、海外展示及技术支持，为制造企业、贸易公司、服务企业、科技企业及成长型企业提供专业的数字化业务支持。公司持续关注企业信息建设、产品展示、双语企业资料整理、网站内容管理及技术支持，帮助企业建立更加清晰、可信、可持续发展的线上业务形象。
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e5e7eb;
+      background: rgba(255,255,255,0.96);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
----
+    .brand {
+      font-size: 20px;
+      font-weight: 800;
+      color: #0f172a;
+    }
 
-## 业务方向
+    nav a {
+      margin-left: 22px;
+      text-decoration: none;
+      color: #334155;
+      font-size: 15px;
+    }
 
-公司目前主要围绕企业数字化服务、海外展示和技术支持三个方向开展业务。企业数字化服务包括企业官网建设、企业资料整理、产品展示页面、公司介绍优化及线上联系入口建设；海外展示包括英文网站、双语企业介绍、产品英文展示及国际客户展示资料；技术支持包括网站维护、页面更新、数字化资料整理、软件及系统支持。
+    .hero {
+      padding: 100px 8% 90px;
+      background:
+        radial-gradient(circle at top right, rgba(30,58,138,0.16), transparent 34%),
+        linear-gradient(135deg, #f8fafc 0%, #eef2f7 100%);
+    }
 
----
+    .eyebrow {
+      color: #1e3a8a;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
 
-## 技术积累
+    h1 {
+      font-size: 48px;
+      line-height: 1.2;
+      margin: 0 0 20px;
+      color: #0f172a;
+    }
 
-成都保堡智能科技有限公司长期从事软件、智能设备、系统集成及企业数字化相关业务，积累了软件著作权、专利及多项技术项目经验。这些技术积累为企业数字化服务、产品展示、网站建设和技术支持提供了稳定基础，也让公司能够从技术视角帮助企业建立更加长期、规范和可信的数字化展示体系。
+    .subtitle {
+      font-size: 24px;
+      color: #1e3a8a;
+      margin-bottom: 26px;
+    }
 
----
+    .lead {
+      max-width: 920px;
+      font-size: 18px;
+      color: #475569;
+    }
 
-## 服务对象
+    section {
+      padding: 82px 8%;
+    }
 
-我们主要服务制造企业、贸易公司、服务企业、科技企业及正在成长中的中小企业。对于需要建立企业官网、整理产品资料、完善企业介绍、提升线上展示形象、准备英文资料或面向海外客户展示的企业，我们可以提供持续、稳定、实用的数字化支持。
+    .section-title {
+      font-size: 34px;
+      margin-bottom: 18px;
+      color: #0f172a;
+    }
 
----
+    .section-subtitle {
+      max-width: 880px;
+      color: #64748b;
+      margin-bottom: 44px;
+      font-size: 17px;
+    }
 
-## Company Profile
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
 
-### Chengdu Baobao Intelligent Technology Co., Ltd.
+    .grid-four {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
 
-**Business Digital Services · Overseas Business Presentation · Technical Support**
+    .card {
+      padding: 32px;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+    }
 
-Chengdu Baobao Intelligent Technology Co., Ltd. provides business digital services, overseas business presentation, and technical support for manufacturers, trading companies, service businesses, technology companies, and growing enterprises.
+    .icon {
+      font-size: 28px;
+      margin-bottom: 14px;
+    }
 
-The company focuses on corporate websites, business profiles, product showcases, bilingual company information, website content management, and technical support. With experience in software-related technologies, intelligent devices, system integration, and business digital services, we help companies build a clear, professional, trustworthy, and sustainable digital business presence for both domestic and international markets.
+    .card h3 {
+      margin-top: 0;
+      color: #1e3a8a;
+      font-size: 22px;
+    }
 
----
+    .card p {
+      color: #475569;
+      font-size: 16px;
+    }
 
-## 联系方式
+    .dark {
+      background: #0f172a;
+      color: #ffffff;
+    }
 
-成都保堡智能科技有限公司
-联系人：李经理
-电话：18398798123
-微信：18398798123
-地址：四川省成都市
+    .dark .section-title,
+    .dark h3 {
+      color: #ffffff;
+    }
+
+    .dark .section-subtitle,
+    .dark p {
+      color: #cbd5e1;
+    }
+
+    .dark .card {
+      background: #111c33;
+      border-color: #24324d;
+    }
+
+    .contact-box {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 38px;
+      max-width: 760px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+    }
+
+    footer {
+      padding: 38px 8%;
+      background: #020617;
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    footer strong {
+      color: #ffffff;
+    }
+
+    @media (max-width: 900px) {
+      .grid,
+      .grid-four {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        display: block;
+      }
+
+      nav {
+        margin-top: 16px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 16px;
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">成都保堡智能科技有限公司</div>
+  <nav>
+    <a href="index.html">首页 Home</a>
+    <a href="company.html">公司介绍 About</a>
+    <a href="services.html">服务项目 Services</a>
+    <a href="industries.html">服务行业 Industries</a>
+    <a href="projects.html">项目案例 Projects</a>
+    <a href="contact.html">联系我们 Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="eyebrow">ABOUT THE COMPANY</div>
+  <h1>成都保堡智能科技有限公司</h1>
+  <div class="subtitle">企业数字化服务 · 海外展示 · 技术支持</div>
+  <p class="lead">
+    帮助企业建立清晰、可信、可持续发展的数字化业务形象。<br />
+    Helping businesses build a clear, trusted, and sustainable digital presence.
+  </p>
+</section>
+
+<section>
+  <h2 class="section-title">关于我们 About</h2>
+  <p class="section-subtitle">
+    成都保堡智能科技有限公司专注于企业数字化服务、海外展示及技术支持，为制造企业、贸易公司、服务企业、科技企业及成长型企业提供专业的数字化业务支持。公司持续关注企业信息建设、产品展示、双语企业资料整理、网站内容管理及技术支持，帮助企业建立更加清晰、可信、可持续发展的线上业务形象。
+  </p>
+  <p class="section-subtitle">
+    Chengdu Baobao Intelligent Technology Co., Ltd. provides business digital services, overseas business presentation, and technical support for manufacturers, trading companies, service businesses, technology companies, and growing enterprises.
+  </p>
+</section>
+
+<section>
+  <h2 class="section-title">业务方向 Business Capabilities</h2>
+  <p class="section-subtitle">
+    公司目前主要围绕企业数字化服务、海外展示和技术支持三个方向开展业务，帮助企业把公司信息、产品内容、业务介绍和联系入口整理成更加清楚、专业、长期可维护的线上展示体系。
+  </p>
+
+  <div class="grid-four">
+    <div class="card">
+      <div class="icon">🌐</div>
+      <h3>企业数字化服务</h3>
+      <p>企业官网建设、企业资料整理、产品展示页面、公司介绍优化及线上联系入口建设。</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🌍</div>
+      <h3>海外展示</h3>
+      <p>英文网站、双语企业介绍、产品英文展示及国际客户展示资料。</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💬</div>
+      <h3>双语企业资料</h3>
+      <p>中英文企业介绍、产品资料、服务说明和海外客户可理解的业务内容。</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <h3>技术支持</h3>
+      <p>网站维护、页面更新、数字化资料整理、软件及系统支持。</p>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <h2 class="section-title">技术积累 Technology Foundation</h2>
+  <p class="section-subtitle">
+    成都保堡智能科技有限公司长期从事软件、智能设备、系统集成及企业数字化相关业务，积累了软件著作权、专利及多项技术项目经验。这些技术积累为企业数字化服务、产品展示、网站建设和技术支持提供了稳定基础。
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="icon">💻</div>
+      <h3>软件与系统</h3>
+      <p>Software and system experience supporting business information organization, website content, and digital service delivery.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🔐</div>
+      <h3>智能设备项目</h3>
+      <p>Project experience related to intelligent devices, technical services, and business application scenarios.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🏗️</div>
+      <h3>企业数字化基础</h3>
+      <p>Technical foundation for business websites, product presentation, bilingual content, and long-term online presence.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">服务对象 Who We Serve</h2>
+  <p class="section-subtitle">
+    我们主要服务制造企业、贸易公司、服务企业、科技企业及正在成长中的中小企业。对于需要建立企业官网、整理产品资料、完善企业介绍、提升线上展示形象、准备英文资料或面向海外客户展示的企业，我们可以提供持续、稳定、实用的数字化支持。
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="icon">🏭</div>
+      <h3>制造企业</h3>
+      <p>Manufacturers preparing product and company presentation.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🚢</div>
+      <h3>贸易公司</h3>
+      <p>Trading companies building bilingual and international-facing materials.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📈</div>
+      <h3>成长型企业</h3>
+      <p>Growing businesses improving digital presence and long-term visibility.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">长期方向 Long-Term Direction</h2>
+  <p class="section-subtitle">
+    我们相信企业数字化不仅是建立网站，更是持续维护企业公开信息、产品资料、业务介绍和客户联系渠道。成都保堡智能科技有限公司将持续围绕企业数字化服务、海外展示和技术支持，为企业建立长期稳定的数字化业务基础。
+  </p>
+</section>
+
+<section class="dark">
+  <h2 class="section-title">Business Highlights</h2>
+  <p class="section-subtitle">
+    企业数字化服务 · 海外展示 · 双语企业资料 · 产品展示 · 网站维护 · 技术支持
+  </p>
+
+  <div class="grid-four">
+    <div class="card">
+      <div class="icon">🌐</div>
+      <h3>Digital Services</h3>
+      <p>企业数字化服务</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💬</div>
+      <h3>Bilingual Profiles</h3>
+      <p>双语企业资料</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📦</div>
+      <h3>Product Showcase</h3>
+      <p>产品展示</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🎧</div>
+      <h3>Technical Support</h3>
+      <p>技术支持</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">联系我们 Contact</h2>
+  <p class="section-subtitle">欢迎咨询企业数字化服务、海外展示及技术支持合作。</p>
+
+  <div class="contact-box">
+    <p><strong>成都保堡智能科技有限公司</strong></p>
+    <p>联系人：李经理</p>
+    <p>电话 / 微信：18398798123</p>
+    <p>地址：四川省成都市</p>
+    <p>Website: https://china.bb369tech.com</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p><strong>成都保堡智能科技有限公司</strong></p>
+  <p>Chengdu Baobao Intelligent Technology Co., Ltd.</p>
+  <p>Business Digital Infrastructure · Overseas Business Presentation · Technical Support</p>
+  <p>Website: https://china.bb369tech.com</p>
+  <p>Phone / WeChat: 18398798123</p>
+  <p>© 2026 Chengdu Baobao Intelligent Technology Co., Ltd. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
