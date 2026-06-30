@@ -1,47 +1,237 @@
-# projects.html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>项目方向｜企业官网、英文展示与网站升级｜保堡科技</title>
+  <meta name="description" content="查看保堡科技可支持的企业官网、网站升级、产品展示、英文网站、海外业务展示和网站维护项目方向。" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://china.bb369tech.com/projects.html" />
+  <meta property="og:title" content="项目方向｜企业官网、英文展示与网站升级｜保堡科技" />
+  <meta property="og:description" content="查看保堡科技可支持的企业官网、网站升级、产品展示、英文网站、海外业务展示和网站维护项目方向。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://china.bb369tech.com/projects.html" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:site_name" content="保堡科技 BAOBAO TECH" />
+  <meta name="theme-color" content="#0a2f5a" />
 
-# 项目与案例方向
+  <style>
+    :root {
+      --navy:#0a2f5a;
+      --navy-deep:#061f3d;
+      --blue:#1f6fb2;
+      --blue-soft:#eaf3fb;
+      --mist:#f4f8fc;
+      --white:#fff;
+      --text:#18283a;
+      --muted:#607184;
+      --line:#dce6ef;
+      --shadow:0 20px 48px rgba(8,43,82,.10);
+      --radius:18px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,"PingFang SC","Microsoft YaHei","Noto Sans SC",Arial,sans-serif;color:var(--text);background:var(--white);line-height:1.78;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(calc(100% - 40px),var(--max));margin:0 auto}
+    .site-header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);border-bottom:1px solid rgba(10,47,90,.08);backdrop-filter:blur(14px)}
+    .header-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+    .brand{display:flex;align-items:center;gap:12px;color:var(--navy);font-weight:800}
+    .brand-mark{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(145deg,var(--navy-deep),var(--blue));color:#fff;font-size:18px;box-shadow:0 10px 22px rgba(10,47,90,.18)}
+    .brand-name{font-size:18px;line-height:1.15}
+    .brand-name small{display:block;margin-top:5px;color:#718096;font-size:10px;letter-spacing:.14em}
+    .main-nav{display:flex;align-items:center;gap:28px;color:#31465c;font-size:15px;font-weight:650}
+    .main-nav a{position:relative;padding:27px 0 23px}
+    .main-nav a::after{position:absolute;left:0;right:0;bottom:18px;width:0;height:2px;margin:auto;border-radius:99px;background:var(--blue);content:"";transition:width .2s ease}
+    .main-nav a:hover,.main-nav a.active{color:var(--navy)}
+    .main-nav a:hover::after,.main-nav a.active::after{width:100%}
+    .menu-toggle{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--navy);font-size:22px;cursor:pointer}
+    .page-hero{position:relative;overflow:hidden;padding:92px 0 78px;background:radial-gradient(circle at 88% 16%,rgba(31,111,178,.14),transparent 30%),linear-gradient(135deg,#f9fbfd 0%,#edf4fa 58%,#f7fafc 100%);border-bottom:1px solid rgba(10,47,90,.07)}
+    .page-hero .eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;color:var(--blue);font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .page-hero .eyebrow::before{width:30px;height:2px;border-radius:99px;background:var(--blue);content:""}
+    .page-hero h1{max-width:860px;color:var(--navy);font-size:clamp(38px,5vw,58px);line-height:1.16;letter-spacing:-.035em}
+    .page-hero p{max-width:820px;margin-top:22px;color:#4f6378;font-size:18px;line-height:1.9}
+    .page-hero .en{font-size:15px;color:#7a8999}
+    .section{padding:92px 0}
+    .section-soft{background:var(--mist)}
+    .section-dark{background:var(--navy-deep);color:#fff}
+    .section-heading{max-width:800px;margin-bottom:42px}
+    .section-label{margin-bottom:12px;color:var(--blue);font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .section-dark .section-label{color:#84c2ef}
+    .section-heading h2{color:var(--navy);font-size:clamp(30px,4vw,43px);line-height:1.28;letter-spacing:-.025em}
+    .section-dark .section-heading h2{color:#fff}
+    .section-heading p{margin-top:17px;color:var(--muted);font-size:17px;line-height:1.9}
+    .section-dark .section-heading p{color:rgba(255,255,255,.72)}
+    .button{min-height:50px;display:inline-flex;align-items:center;justify-content:center;padding:0 24px;border:1px solid transparent;border-radius:13px;font-size:15px;font-weight:750;transition:.2s ease}
+    .button:hover{transform:translateY(-2px)}
+    .button-primary{background:var(--navy);color:#fff;box-shadow:0 12px 28px rgba(10,47,90,.2)}
+    .button-secondary{border-color:rgba(10,47,90,.18);background:#fff;color:var(--navy)}
+    .site-footer{padding:46px 0;background:#041a31;color:rgba(255,255,255,.72);text-align:center}
+    .footer-company{color:#fff;font-size:18px;font-weight:800}
+    .footer-cn{margin-top:8px;font-size:14px}
+    .footer-en{margin-top:4px;color:rgba(255,255,255,.54);font-size:13px}
+    .copyright{margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.09);color:rgba(255,255,255,.43);font-size:12px}
+    @media(max-width:960px){
+      .menu-toggle{display:grid;place-items:center}
+      .main-nav{position:absolute;top:76px;left:20px;right:20px;display:none;flex-direction:column;align-items:stretch;gap:0;padding:14px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow)}
+      .main-nav.open{display:flex}
+      .main-nav a{padding:13px 14px;border-radius:10px}
+      .main-nav a::after{display:none}
+      .main-nav a:hover,.main-nav a.active{background:var(--mist)}
+    }
+    @media(max-width:680px){
+      .container{width:min(calc(100% - 28px),var(--max))}
+      .header-inner{min-height:68px}
+      .brand-name{font-size:15px}
+      .brand-mark{width:38px;height:38px}
+      .main-nav{top:68px;left:14px;right:14px}
+      .page-hero{padding:72px 0 60px}
+      .section{padding:70px 0}
+      .button{width:100%}
+    }
+  </style>
 
-## Project Areas
 
-成都保堡智能科技有限公司围绕企业数字化服务、海外展示及技术支持，为企业提供官网建设、产品展示、双语资料整理、网站维护及相关技术服务。以下内容用于展示公司可支持的项目方向，具体合作内容可根据企业实际需求沟通确认。
+<style>
+.project-cases{display:grid;gap:28px}
+.project-case{display:grid;grid-template-columns:110px 1fr 280px;gap:28px;align-items:start;padding:32px;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:0 12px 32px rgba(10,47,90,.06)}
+.project-number{font-size:42px;font-weight:850;color:#bfd2e4;line-height:1}
+.project-main h3{color:var(--navy);font-size:24px}
+.project-main p{margin-top:12px;color:var(--muted)}
+.project-side{padding-left:24px;border-left:1px solid var(--line)}
+.project-side strong{display:block;color:var(--blue);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.project-side span{display:block;margin-top:8px;color:var(--navy);font-weight:700}
+.project-note{padding:34px;border-radius:20px;background:var(--navy-deep);color:#fff}
+.project-note h3{font-size:24px}
+.project-note p{margin-top:12px;color:rgba(255,255,255,.72)}
+@media(max-width:900px){.project-case{grid-template-columns:80px 1fr}.project-side{grid-column:2;padding-left:0;padding-top:18px;border-left:0;border-top:1px solid var(--line)}}
+@media(max-width:680px){.project-case{grid-template-columns:1fr}.project-side{grid-column:auto}}
+</style>
 
----
+</head>
+<body>
 
-## 企业官网与线上展示
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="保堡科技首页">
+        <span class="brand-mark">B</span>
+        <span class="brand-name">保堡科技 BAOBAO TECH<small>CHENGDU · CHINA</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="主要导航">
+        <a href="company.html" class="">公司介绍</a>
+<a href="services.html" class="">服务项目</a>
+<a href="industries.html" class="">服务行业</a>
+<a href="projects.html" class="active">项目方向</a>
+<a href="contact.html" class="">联系我们</a>
+      </nav>
+    </div>
+  </header>
 
-为企业建立清晰、专业、可信的官网页面，展示公司介绍、主营业务、产品资料、服务范围及联系方式，适合制造企业、贸易公司、服务企业及成长型企业。
 
-## 产品展示与资料整理
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Project Areas</div>
+        <h1>按照企业当前状态，组合适合的公开项目</h1>
+        <p>本页展示保堡科技可以支持的项目类型，不代表虚构客户案例。项目内容以企业真实信息、现有产品和公开业务需求为基础。</p>
+        <p class="en">Project areas include corporate website development, website renewal, bilingual business presentation, product presentation, and ongoing website support.</p>
+      </div>
+    </section>
 
-协助企业整理产品名称、产品分类、产品说明、应用场景及展示资料，使客户能够更直观地理解企业产品和服务能力。
+    <section class="section">
+      <div class="container">
+        <div class="project-cases">
+          <article class="project-case">
+            <div class="project-number">01</div>
+            <div class="project-main"><h3>公司已经成立，但没有正式官网</h3><p>适合需要建立公司身份、业务内容、产品展示和联系方式统一入口的企业。</p></div>
+            <div class="project-side"><strong>Project Direction</strong><span>企业官网建立与基础内容上线</span></div>
+          </article>
 
-## 英文网站与海外展示
+          <article class="project-case">
+            <div class="project-number">02</div>
+            <div class="project-main"><h3>已有网站，但内容陈旧或信息不完整</h3><p>适合公司业务、产品和联系方式已经变化，现有页面无法准确反映当前经营情况的企业。</p></div>
+            <div class="project-side"><strong>Project Direction</strong><span>网站升级、内容更新与页面重整</span></div>
+          </article>
 
-为需要面向国际客户的企业整理英文企业介绍、产品展示内容、业务说明及海外客户可理解的展示资料，帮助企业建立更加专业的国际业务形象。
+          <article class="project-case">
+            <div class="project-number">03</div>
+            <div class="project-main"><h3>产品不少，但客户很难快速看懂</h3><p>适合需要重新整理产品类别、主要特点、应用场景和询盘信息的制造或贸易企业。</p></div>
+            <div class="project-side"><strong>Project Direction</strong><span>产品展示与业务内容整理</span></div>
+          </article>
 
-## 网站维护与技术支持
+          <article class="project-case">
+            <div class="project-number">04</div>
+            <div class="project-main"><h3>准备接触海外客户，但缺少英文展示</h3><p>适合需要英文公司介绍、产品内容、海外业务页面和国际客户联系入口的企业。</p></div>
+            <div class="project-side"><strong>Project Direction</strong><span>英文网站与海外业务展示</span></div>
+          </article>
 
-为企业提供页面更新、资料调整、内容维护、基础技术支持及长期数字化展示支持，帮助企业保持稳定、持续更新的线上形象。
+          <article class="project-case">
+            <div class="project-number">05</div>
+            <div class="project-main"><h3>网站已经上线，但长期缺少维护</h3><p>适合需要持续更新产品、业务内容、联系方式和相关页面的企业。</p></div>
+            <div class="project-side"><strong>Project Direction</strong><span>网站维护、页面更新与技术支持</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-## 技术项目与数字化支持
+    <section class="section section-soft">
+      <div class="container" style="display:grid;grid-template-columns:1fr .9fr;gap:32px;align-items:start;">
+        <div>
+          <div class="section-label">Public Information Only</div>
+          <h2 style="color:var(--navy);font-size:clamp(30px,4vw,42px);line-height:1.3;">项目页面只展示客户需要看到的公开内容</h2>
+          <p style="margin-top:18px;color:var(--muted);font-size:17px;">包括公司身份、业务范围、产品信息、应用场景、联系入口和必要的中英文说明。内部管理资料、客户敏感信息和非公开内容不进入公开页面。</p>
+        </div>
+        <aside class="project-note">
+          <h3>开始咨询时可提供</h3>
+          <p>公司主营业务、现有网站情况、需要展示的产品或服务、目标客户、语言需求，以及当前最希望解决的问题。</p>
+        </aside>
+      </div>
+    </section>
 
-结合公司在软件、智能设备、系统集成及企业数字化方面的项目经验，为企业提供更稳定的数字化展示和技术支持基础。
+    <section class="section">
+      <div class="container" style="display:flex;justify-content:space-between;gap:30px;align-items:center;flex-wrap:wrap;">
+        <div><h2 style="color:var(--navy);font-size:32px;">确认适合贵公司的项目方向</h2><p style="margin-top:10px;color:var(--muted);">直接说明企业现状和当前需求即可。</p></div>
+        <a class="button button-primary" href="contact.html">联系我们</a>
+      </div>
+    </section>
+  </main>
 
----
 
-# Project Areas
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-company">成都保堡智能科技有限公司</div>
+      <div class="footer-cn">企业数字化服务 · 海外展示 · 技术支持</div>
+      <div class="footer-en">Business Digital Infrastructure · Overseas Business Presentation · Technical Support</div>
+      <div class="copyright">© 2026 Chengdu Baobao Intelligent Technology Co., Ltd. All rights reserved.</div>
+    </div>
+  </footer>
+  <script>
+    const menuToggle=document.querySelector(".menu-toggle");
+    const mainNav=document.querySelector(".main-nav");
+    if(menuToggle&&mainNav){
+      menuToggle.addEventListener("click",function(){
+        const isOpen=mainNav.classList.toggle("open");
+        menuToggle.setAttribute("aria-expanded",String(isOpen));
+        menuToggle.textContent=isOpen?"✕":"☰";
+      });
+      mainNav.querySelectorAll("a").forEach(function(link){
+        link.addEventListener("click",function(){
+          mainNav.classList.remove("open");
+          menuToggle.setAttribute("aria-expanded","false");
+          menuToggle.textContent="☰";
+        });
+      });
+      window.addEventListener("resize",function(){
+        if(window.innerWidth>960){
+          mainNav.classList.remove("open");
+          menuToggle.setAttribute("aria-expanded","false");
+          menuToggle.textContent="☰";
+        }
+      });
+    }
+  </script>
 
-Chengdu Baobao Intelligent Technology Co., Ltd. supports corporate websites, product showcases, bilingual business profiles, overseas business presentation, website maintenance, and technical support.
-
-Our project areas include corporate websites, product presentation, English business websites, business information organization, website maintenance, and long-term digital support for companies in China and international markets.
-
----
-
-## 联系我们
-
-成都保堡智能科技有限公司
-联系人：李经理
-电话：18398798123
-微信：18398798123
-地址：四川省成都市
+</body>
+</html>
