@@ -1,28 +1,17 @@
-# BB369TECH China Website Preview Module v1.0.0
+# BB369TECH China Website Preview Module v1.1.0
 
-中文优先、纯前端、低数据的企业官网视觉预览模块。
+Public, browser-only preview and sharing module for `china.bb369tech.com/preview/`.
 
-## 部署位置
+## New in v1.1.0
 
-将整个 `preview/` 文件夹复制到 `china.bb369tech.com` 对应仓库根目录。
+- Shareable preview links stored entirely in the URL fragment
+- Native device sharing and copy-link actions
+- Shared-preview mode with “create mine” referral path
+- Powered by BB369TECH attribution and return links
+- Project brief copy action for formal inquiries
+- Downloaded preview pages retain BB369TECH attribution
+- No account, database, analytics, or form submission
 
-最终访问路径：
+## Install
 
-`https://china.bb369tech.com/preview/`
-
-## 数据边界
-
-- 不使用账号
-- 不使用数据库
-- 不上传用户输入
-- 不使用 Cookie 或本地持久化
-- 不调用生成式 AI
-- 不收集联系人、手机号或证件信息
-
-## 入口链接
-
-在中国官网首页添加：
-
-```html
-<a href="preview/">免费企业官网预览</a>
-```
+Copy the complete `preview/` directory into the root of the existing China website repository.

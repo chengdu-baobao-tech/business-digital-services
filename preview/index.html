@@ -8,10 +8,16 @@
   <meta property="og:title" content="BB369TECH 免费企业官网预览" />
   <meta property="og:description" content="输入企业信息，先看看您的官网可以是什么样子。" />
   <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://china.bb369tech.com/preview/" />
   <title>BB369TECH｜免费企业官网预览</title>
   <link rel="stylesheet" href="assets/css/site.css" />
 </head>
 <body>
+  <div class="share-toast" id="shareToast" role="status" aria-live="polite"></div>
+  <div class="shared-banner" id="sharedBanner" hidden>
+    <span>您正在查看一个企业官网预览</span>
+    <button id="createMineTop" type="button">使用同款生成我的预览</button>
+  </div>
   <div class="ambient ambient-one"></div>
   <div class="ambient ambient-two"></div>
 
@@ -110,7 +116,18 @@
               <article><small>02</small><h4 id="previewService2">定制服务</h4><p>根据业务场景提供稳定、清楚的展示方式。</p></article>
               <article><small>03</small><h4 id="previewService3">长期客户支持</h4><p>持续维护企业信息、页面和联系入口。</p></article>
             </div>
-            <div class="preview-footer"><span id="previewMarket">中国及国际市场</span><strong>Preview by BB369TECH</strong></div>
+            <div class="preview-footer"><span id="previewMarket">中国及国际市场</span><a class="powered-link" href="../" target="_blank" rel="noopener">Powered by BB369TECH</a></div>
+          </div>
+          <div class="share-panel">
+            <div>
+              <span class="share-label">分享这个企业官网预览</span>
+              <p>生成一个可转发链接。企业资料只写入链接片段，不会自动提交到服务器。</p>
+            </div>
+            <div class="share-actions">
+              <button class="primary-btn compact" id="copyShareLink" type="button">复制分享链接</button>
+              <button class="secondary-btn compact" id="nativeShare" type="button">一键分享</button>
+              <button class="secondary-btn compact" id="createMine" type="button">使用同款生成</button>
+            </div>
           </div>
         </div>
       </div>
@@ -127,7 +144,7 @@
 
     <section class="cta section-shell">
       <div><span class="eyebrow">正式企业官网</span><h2>喜欢这个方向？让 BB369TECH 为您的企业完成正式版本。</h2><p>正式项目可包括企业资料整理、产品与服务展示、双语内容、域名接入、联系表单、搜索基础配置和持续维护。</p></div>
-      <a class="primary-btn light" id="customBuildLink" href="mailto:contact@bb369tech.com">申请正式定制</a>
+      <div class="cta-actions"><a class="primary-btn light" id="customBuildLink" href="../contact.html">申请正式定制</a><button class="secondary-btn light" id="copyProjectBrief" type="button">复制项目需求</button></div>
     </section>
   </main>
 
