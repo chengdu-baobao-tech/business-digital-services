@@ -1,44 +1,28 @@
-# Chengdu Baobao Intelligent Technology Co., Ltd.
+# BB369TECH China Website Preview Module v1.0.0
 
-### Business Digital Infrastructure · Overseas Business Presentation · Technical Support
+中文优先、纯前端、低数据的企业官网视觉预览模块。
 
-**Chengdu Baobao Intelligent Technology Co., Ltd.** maintains this repository as the official website source for its public corporate presence.
+## 部署位置
 
-成都保堡智能科技有限公司专注于企业数字化服务、海外展示及技术支持，为制造企业、贸易公司、服务企业、科技企业及成长型企业提供专业的数字化业务支持。
+将整个 `preview/` 文件夹复制到 `china.bb369tech.com` 对应仓库根目录。
 
-The company provides corporate websites, bilingual company profiles, product showcases, overseas business presentation, website maintenance, and technical support for companies in China and international markets.
+最终访问路径：
 
----
+`https://china.bb369tech.com/preview/`
 
-## Corporate Website Overview
+## 数据边界
 
-| 🏢 Company Identity | 💼 Business Capabilities | 🌍 Market Presentation | 🛡️ Technical Support |
-|---|---|---|---|
-| Company profile and public business identity. | Corporate websites, business profiles, and product showcases. | Bilingual company information and overseas business presentation. | Website maintenance, technical foundation, FAQ, and contact information. |
+- 不使用账号
+- 不使用数据库
+- 不上传用户输入
+- 不使用 Cookie 或本地持久化
+- 不调用生成式 AI
+- 不收集联系人、手机号或证件信息
 
----
+## 入口链接
 
-## Business Capabilities
+在中国官网首页添加：
 
-| 🌐 Business Digital Infrastructure | 🌍 Overseas Business Presentation | 💬 Bilingual Company Profiles |
-|---|---|---|
-| Corporate websites and structured online business presence. | International-facing business materials and company presentation. | Chinese and English company information for domestic and international markets. |
-
-| 📦 Product Showcases | 🛠️ Website Maintenance | 🎧 Technical Support |
-|---|---|---|
-| Product and service presentation for business customers. | Website updates, content maintenance, and long-term online presence. | Ongoing technical and business support for company digital operations. |
-
----
-
-## Official Website
-
-🌐 **Website:** https://china.bb369tech.com
-
----
-
-## Contact
-
-**Chengdu Baobao Intelligent Technology Co., Ltd.**  
-Contact Person: Mr. Li  
-Phone / WeChat: +86 18398798123  
-Location: Chengdu, Sichuan, China
+```html
+<a href="preview/">免费企业官网预览</a>
+```

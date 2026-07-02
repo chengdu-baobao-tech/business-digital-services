@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="免费生成企业官网视觉预览。输入企业名称、行业、主营业务和服务区域，即时查看高级、现代、适合企业展示的网站效果。" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="BB369TECH 免费企业官网预览" />
+  <meta property="og:description" content="输入企业信息，先看看您的官网可以是什么样子。" />
+  <meta property="og:type" content="website" />
+  <title>BB369TECH｜免费企业官网预览</title>
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="../" aria-label="返回中国官网">
+      <span class="brand-mark">B</span>
+      <span><strong>BB369TECH</strong><small>成都保堡智能科技有限公司</small></span>
+    </a>
+    <nav class="top-actions" aria-label="页面操作">
+      <a class="ghost-btn" href="#how">如何使用</a>
+      <a class="primary-btn compact" href="#builder">免费生成预览</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <span class="eyebrow">免费企业官网视觉预览</span>
+        <h1>输入企业信息，先看看您的官网可以是什么样子。</h1>
+        <p class="hero-lead">无需注册。填写企业名称、所属行业、主营业务和服务区域，即可实时生成高级、现代、适合企业展示的网站效果。</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#builder">立即生成预览</a>
+          <a class="text-btn" href="#how">查看使用方式 →</a>
+        </div>
+        <div class="trust-row"><span>无需安装</span><span>无需代码</span><span>浏览器即时生成</span></div>
+      </div>
+
+      <div class="hero-showcase" aria-label="企业官网效果示意">
+        <div class="browser-frame floating-card">
+          <div class="browser-bar"><i></i><i></i><i></i><span>china.bb369tech.com/preview</span></div>
+          <div class="mini-site">
+            <div class="mini-nav"><b>恒远智造</b><span>公司介绍&nbsp;&nbsp; 产品服务&nbsp;&nbsp; 联系我们</span></div>
+            <div class="mini-hero"><span>先进制造与可靠交付</span><h3>让客户更快看懂您的企业。</h3><p>清晰展示业务能力、产品服务和合作方式。</p><button>了解合作</button></div>
+            <div class="mini-cards"><i></i><i></i><i></i></div>
+          </div>
+        </div>
+        <div class="metric-card metric-a"><strong>4</strong><span>种企业视觉风格</span></div>
+        <div class="metric-card metric-b"><strong>100%</strong><span>支持手机端预览</span></div>
+      </div>
+    </section>
+
+    <section id="builder" class="builder-section section-shell">
+      <div class="section-heading centered">
+        <span class="eyebrow">生成您的企业官网预览</span>
+        <h2>填写少量公开信息，马上看到效果。</h2>
+        <p>请仅填写可公开展示的企业信息。输入内容只在当前浏览器中使用，不会自动提交或保存。</p>
+      </div>
+
+      <div class="builder-grid">
+        <form class="builder-panel" id="previewForm">
+          <div class="field-grid two">
+            <label><span>企业名称</span><input id="companyName" type="text" maxlength="60" value="恒远智造有限公司" placeholder="例如：恒远智造有限公司" /></label>
+            <label><span>所属行业</span><select id="industry"><option value="现代企业">现代企业</option><option value="制造工业">制造工业</option><option value="国际贸易">国际贸易</option><option value="专业服务">专业服务</option><option value="本地服务">本地服务</option></select></label>
+          </div>
+
+          <label><span>主标题</span><input id="headline" type="text" maxlength="90" value="让客户更快看懂您的企业。" placeholder="例如：让客户更快看懂您的企业。" /></label>
+          <label><span>企业简介</span><textarea id="intro" rows="4" maxlength="260">我们专注于稳定的产品与服务交付，通过清晰的信息展示、可靠的业务能力和持续支持，与客户建立长期合作。</textarea></label>
+
+          <div class="field-grid two">
+            <label><span>主营业务 1</span><input id="service1" type="text" maxlength="45" value="产品与解决方案" /></label>
+            <label><span>主营业务 2</span><input id="service2" type="text" maxlength="45" value="定制服务" /></label>
+          </div>
+          <div class="field-grid two">
+            <label><span>主营业务 3</span><input id="service3" type="text" maxlength="45" value="长期客户支持" /></label>
+            <label><span>所在城市或服务区域</span><input id="market" type="text" maxlength="45" value="中国及国际市场" /></label>
+          </div>
+
+          <fieldset>
+            <legend>选择视觉风格</legend>
+            <div class="style-picker">
+              <button type="button" class="style-card active" data-style="modern"><i></i><span>现代企业</span></button>
+              <button type="button" class="style-card" data-style="industrial"><i></i><span>制造工业</span></button>
+              <button type="button" class="style-card" data-style="trade"><i></i><span>国际贸易</span></button>
+              <button type="button" class="style-card" data-style="professional"><i></i><span>专业服务</span></button>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="primary-btn" type="submit">更新预览</button>
+            <button class="secondary-btn" id="downloadHtml" type="button">下载预览样张</button>
+          </div>
+          <p class="form-note">预览样张仅用于查看视觉方向，不包含正式域名、完整页面、客户表单、搜索配置或持续维护服务。</p>
+          <p class="safe-note">请勿填写姓名、手机号、证件号码、账户密码、财务数据、客户名单、技术图纸或其他个人及企业敏感信息。</p>
+        </form>
+
+        <div class="preview-panel">
+          <div class="preview-toolbar"><div><i></i><i></i><i></i></div><span id="previewAddress">yourbusiness.preview</span><button id="deviceToggle" type="button" aria-label="切换手机预览">⌘</button></div>
+          <div class="site-preview style-modern" id="sitePreview">
+            <div class="preview-nav"><strong id="previewBrand">恒远智造有限公司</strong><span>公司介绍&nbsp;&nbsp;&nbsp; 产品服务&nbsp;&nbsp;&nbsp; 联系我们</span></div>
+            <div class="preview-hero">
+              <div class="preview-copy"><span class="preview-kicker" id="previewIndustry">现代企业</span><h3 id="previewHeadline">让客户更快看懂您的企业。</h3><p id="previewIntro">我们专注于稳定的产品与服务交付，通过清晰的信息展示、可靠的业务能力和持续支持，与客户建立长期合作。</p><button>了解合作</button></div>
+              <div class="preview-art"><span></span><span></span><span></span></div>
+            </div>
+            <div class="preview-services">
+              <article><small>01</small><h4 id="previewService1">产品与解决方案</h4><p>清晰呈现企业能力与真实业务价值。</p></article>
+              <article><small>02</small><h4 id="previewService2">定制服务</h4><p>根据业务场景提供稳定、清楚的展示方式。</p></article>
+              <article><small>03</small><h4 id="previewService3">长期客户支持</h4><p>持续维护企业信息、页面和联系入口。</p></article>
+            </div>
+            <div class="preview-footer"><span id="previewMarket">中国及国际市场</span><strong>Preview by BB369TECH</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="steps-section section-shell">
+      <div class="section-heading"><span class="eyebrow">从预览到正式上线</span><h2>免费预览让您先看到方向，正式项目让网站真正服务于业务。</h2></div>
+      <div class="steps-grid">
+        <article><span>01</span><h3>即时查看视觉方向</h3><p>填写少量公开企业信息，实时查看不同风格的官网效果。</p></article>
+        <article><span>02</span><h3>整理正式企业内容</h3><p>由 BB369TECH 完善企业介绍、产品服务、图片、双语内容和页面结构。</p></article>
+        <article><span>03</span><h3>上线并持续维护</h3><p>连接正式域名、客户联系入口，并持续更新企业信息和网站内容。</p></article>
+      </div>
+    </section>
+
+    <section class="cta section-shell">
+      <div><span class="eyebrow">正式企业官网</span><h2>喜欢这个方向？让 BB369TECH 为您的企业完成正式版本。</h2><p>正式项目可包括企业资料整理、产品与服务展示、双语内容、域名接入、联系表单、搜索基础配置和持续维护。</p></div>
+      <a class="primary-btn light" id="customBuildLink" href="mailto:contact@bb369tech.com">申请正式定制</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>成都保堡智能科技有限公司</strong><p>BB369TECH / 保堡智能科技｜企业官网建设、双语内容、产品与服务展示、网站管理与技术支持。</p></div>
+    <p>本工具仅用于企业官网视觉预览，不代表企业认证、正式网站交付、搜索收录或商业效果承诺。</p>
+    <div class="footer-links"><a href="privacy.html">隐私说明</a><a href="terms.html">使用说明</a><a href="../">返回中国官网</a></div>
+  </footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
