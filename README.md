@@ -10,7 +10,7 @@ https://china.bb369tech.com
 
 **成都保堡智能科技有限公司**  
 **Chengdu Baobao Intelligent Technology Co., Ltd.**  
-**BB369TECH / 保堡智能科技**
+**保堡智能科技**
 
 公司主要提供企业官网建设、企业资料展示、产品与服务展示、双语内容、网站维护及相关技术支持。
 
