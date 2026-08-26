@@ -1,0 +1,8 @@
+{
+  "siteVersion": "v2.0.0",
+  "previewVersion": "v2.2.0",
+  "rootIndex": true,
+  "previewIndex": true,
+  "generatedRoute": "/preview/generated.html",
+  "missingRequiredFiles": []
+}

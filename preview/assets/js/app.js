@@ -1,10 +1,151 @@
-const $=id=>document.getElementById(id);let style='modern';
-function vals(){return {name:$('name').value.trim(),industry:$('industry').value,headline:$('headline').value.trim(),intro:$('intro').value.trim(),s1:$('s1').value.trim(),s2:$('s2').value.trim(),s3:$('s3').value.trim(),market:$('market').value.trim(),phone:$('phone').value.trim(),email:$('email').value.trim(),address:$('address').value.trim(),style}}
-function render(){const v=vals();$('pName').textContent=v.name;$('pIndustry').textContent=v.industry;$('pHeadline').textContent=v.headline;$('pIntro').textContent=v.intro;$('pS1').textContent=v.s1;$('pS2').textContent=v.s2;$('pS3').textContent=v.s3;$('pMarket').textContent=v.market;$('pPhone').textContent=v.phone;$('pEmail').textContent=v.email;$('pAddress').textContent=v.address;$('preview').className='preview '+v.style}
-$('form').addEventListener('submit',e=>{e.preventDefault();render()});document.querySelectorAll('input,textarea,select').forEach(el=>el.addEventListener('input',render));document.querySelectorAll('.style').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.style').forEach(x=>x.classList.remove('active'));b.classList.add('active');style=b.dataset.style;render()}));$('device').addEventListener('click',()=>$('preview').classList.toggle('mobile'));
-function safe(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function buildHTML(){const v=vals(),bg={modern:'#1d3763',industrial:'#3d444d',trade:'#146b6b',professional:'#5b3c6e'}[v.style];return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${safe(v.name)}</title><style>*{box-sizing:border-box}body{margin:0;font-family:Arial,"Microsoft YaHei",sans-serif;color:#172033;line-height:1.65}nav,section,footer{padding-left:8%;padding-right:8%}nav{height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e5e7eb}.hero{padding-top:90px;padding-bottom:90px;background:${bg};color:white}.hero h1{font-size:48px;max-width:800px;line-height:1.15}.hero p{max-width:800px;color:#e4eaf2}.services{padding-top:60px;padding-bottom:60px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.services article{background:#f7f9fc;padding:26px;border-radius:14px}.contact{padding-top:50px;padding-bottom:50px;background:#eef2f7}.contact div{margin:8px 0}footer{padding-top:24px;padding-bottom:24px;background:#0d1727;color:#cbd5e1;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a{color:white}@media(max-width:700px){.hero h1{font-size:34px}.services{grid-template-columns:1fr}}</style></head><body><nav><b>${safe(v.name)}</b><span>关于我们　产品服务　联系我们</span></nav><section class="hero"><small>${safe(v.industry)}</small><h1>${safe(v.headline)}</h1><p>${safe(v.intro)}</p></section><section class="services"><article><h3>${safe(v.s1)}</h3><p>企业产品与服务展示。</p></article><article><h3>${safe(v.s2)}</h3><p>面向实际业务需求提供支持。</p></article><article><h3>${safe(v.s3)}</h3><p>保持长期服务与沟通入口。</p></article></section><section class="contact"><h2>联系我们</h2><div>服务区域：${safe(v.market)}</div><div>电话：${safe(v.phone)}</div><div>邮箱：${safe(v.email)}</div><div>地址：${safe(v.address)}</div></section><footer><span>${safe(v.name)}</span><a href="https://china.bb369tech.com/" target="_blank" rel="noopener">技术支持：成都保堡智能科技有限公司</a></footer></body></html>`}
-$('download').addEventListener('click',()=>{const blob=new Blob([buildHTML()],{type:'text/html;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='business-website.html';a.click();URL.revokeObjectURL(a.href)});
-function encoded(){return btoa(unescape(encodeURIComponent(JSON.stringify(vals()))))}
-function load(){const q=new URLSearchParams(location.search).get('d');if(!q)return;try{const v=JSON.parse(decodeURIComponent(escape(atob(q))));['name','industry','headline','intro','s1','s2','s3','market','phone','email','address'].forEach(k=>{if($(k)&&v[k]!=null)$(k).value=v[k]});if(v.style){style=v.style;document.querySelectorAll('.style').forEach(x=>x.classList.toggle('active',x.dataset.style===style))}render()}catch(e){}}
-$('copyLink').addEventListener('click',async()=>{const u=location.origin+location.pathname+'?d='+encodeURIComponent(encoded());try{await navigator.clipboard.writeText(u);$('copyLink').textContent='已复制';setTimeout(()=>$('copyLink').textContent='复制分享链接',1400)}catch(e){prompt('复制此链接',u)}});load();render();
+(() => {
+  'use strict';
+  const $ = (id) => document.getElementById(id);
+  let style = 'modern';
+
+  function getValues(){
+    return {
+      name: $('name')?.value.trim() || '示例企业',
+      industry: $('industry')?.value || '企业服务',
+      headline: $('headline')?.value.trim() || '让客户更快了解您的企业。',
+      intro: $('intro')?.value.trim() || '我们专注于稳定、专业的产品与服务。',
+      s1: $('s1')?.value.trim() || '产品与解决方案',
+      s2: $('s2')?.value.trim() || '项目定制服务',
+      s3: $('s3')?.value.trim() || '长期客户支持',
+      market: $('market')?.value.trim() || '本地及全国客户',
+      phone: $('phone')?.value.trim() || '',
+      email: $('email')?.value.trim() || '',
+      address: $('address')?.value.trim() || '',
+      style
+    };
+  }
+
+  function render(){
+    const v = getValues();
+    const map = {
+      pName:v.name, pIndustry:v.industry, pHeadline:v.headline, pIntro:v.intro,
+      pS1:v.s1, pS2:v.s2, pS3:v.s3, pMarket:v.market,
+      pPhone:v.phone || '联系电话', pEmail:v.email || '公开邮箱',
+      pAddress:v.address || '服务地点'
+    };
+    Object.entries(map).forEach(([id,val]) => {
+      const el=$(id);
+      if(el) el.textContent=val;
+    });
+
+    const preview = $('preview');
+    if(preview){
+      const mobile = preview.classList.contains('mobile');
+      preview.className = `preview ${v.style}${mobile ? ' mobile' : ''}`;
+    }
+  }
+
+  function encodeState(values){
+    return encodeURIComponent(JSON.stringify(values));
+  }
+
+  function decodeState(value){
+    return JSON.parse(decodeURIComponent(value));
+  }
+
+  function generatedUrl(){
+    return `generated.html?d=${encodeState(getValues())}`;
+  }
+
+  function openGenerated(){
+    render();
+    const status = $('status');
+    if(status) status.textContent = '网站已生成，正在打开…';
+    window.location.href = generatedUrl();
+  }
+
+  function downloadGenerated(){
+    const v = getValues();
+    const url = generatedUrl();
+    const absolute = new URL(url, window.location.href).href;
+
+    fetch(absolute)
+      .then(r => r.text())
+      .then(page => {
+        const a = document.createElement('a');
+        const blob = new Blob([page], {type:'text/html;charset=utf-8'});
+        const blobUrl = URL.createObjectURL(blob);
+        a.href = blobUrl;
+        a.download = (v.name || 'business-website').replace(/[\\/:*?"<>|]/g,'-') + '-preview.html';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
+        const status=$('status');
+        if(status) status.textContent='预览页面已下载。正式独立网站请联系企业建站服务。';
+      })
+      .catch(() => {
+        window.location.href = url;
+      });
+  }
+
+  function loadShared(){
+    const q = new URLSearchParams(location.search).get('d');
+    if(!q) return;
+    try{
+      const v = decodeState(q);
+      ['name','industry','headline','intro','s1','s2','s3','market','phone','email','address'].forEach(k => {
+        if($(k) && v[k] != null) $(k).value = v[k];
+      });
+      if(v.style){
+        style = v.style;
+        document.querySelectorAll('.style').forEach(btn =>
+          btn.classList.toggle('active', btn.dataset.style === style)
+        );
+      }
+    } catch(e) {
+      console.warn('Invalid shared preview state');
+    }
+  }
+
+  function copyShareLink(){
+    const url = new URL(generatedUrl(), window.location.href).href;
+    const btn = $('copyLink');
+    const done = () => {
+      if(btn){
+        btn.textContent='已复制生成网站链接';
+        setTimeout(()=>btn.textContent='复制分享链接',1400);
+      }
+    };
+    if(navigator.clipboard && window.isSecureContext){
+      navigator.clipboard.writeText(url).then(done).catch(()=>window.prompt('复制此链接', url));
+    } else {
+      window.prompt('复制此链接', url);
+    }
+  }
+
+  function init(){
+    loadShared();
+    render();
+
+    $('form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      openGenerated();
+    });
+
+    document.querySelectorAll('#form input,#form textarea,#form select').forEach(el => {
+      el.addEventListener('input', render);
+      el.addEventListener('change', render);
+    });
+
+    document.querySelectorAll('.style').forEach(btn => btn.addEventListener('click', () => {
+      document.querySelectorAll('.style').forEach(x => x.classList.remove('active'));
+      btn.classList.add('active');
+      style = btn.dataset.style || 'modern';
+      render();
+    }));
+
+    $('device')?.addEventListener('click', () => $('preview')?.classList.toggle('mobile'));
+    $('generate')?.addEventListener('click', openGenerated);
+    $('download')?.addEventListener('click', downloadGenerated);
+    $('copyLink')?.addEventListener('click', copyShareLink);
+  }
+
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();

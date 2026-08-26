@@ -12,3 +12,8 @@ Includes:
 - privacy and terms pages
 
 No account is required. The included tools do not require a backend.
+
+
+## Generated Preview Route
+
+Generated business previews open through `generated.html` rather than temporary browser blob URLs.
