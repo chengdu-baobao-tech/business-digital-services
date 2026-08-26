@@ -3,22 +3,23 @@
     "name": "Chengdu Baobao Intelligent Technology Co., Ltd.",
     "name_zh": "成都保堡智能科技有限公司",
     "type": "Business Digital Services Company",
-    "description": "Business Digital Services, Overseas Business Presentation, and Technical Support.",
-    "description_zh": "专注于企业数字化服务、海外展示及技术支持。",
+    "website": "https://china.bb369tech.com/",
+    "description": "Business websites, local business information support, bilingual business content, product and service presentation, website maintenance, and technical support.",
+    "description_zh": "为本地商家和企业提供企业官网、地图商家资料支持、双语内容、产品与服务展示、网站维护及技术支持。",
     "services": [
-      "Business Digital Services",
-      "Corporate Website Development",
-      "Bilingual Company Profile",
-      "Overseas Business Presentation",
-      "Product Showcase",
-      "Technical Support",
-      "Website Maintenance"
+      "Business Website Development",
+      "Local Business Information Support",
+      "Bilingual Business Content",
+      "Product and Service Presentation",
+      "Website Maintenance",
+      "Technical Support"
     ],
-    "industries": [
-      "Manufacturing",
-      "Trading",
-      "Service Businesses",
-      "Technology Companies",
+    "customers": [
+      "Local Businesses",
+      "Small and Medium Businesses",
+      "Manufacturers",
+      "Trading Companies",
+      "Professional Service Businesses",
       "Growing Businesses"
     ],
     "contact": {
@@ -29,11 +30,7 @@
       "province": "Sichuan",
       "country": "China"
     },
-    "languages": [
-      "Chinese",
-      "English"
-    ],
-    "website_type": "Official Corporate Website",
-    "repository": "business-digital-services"
+    "languages": ["Chinese", "English"],
+    "website_type": "Official Corporate Website"
   }
 }
