@@ -1,139 +1,26 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>企业官网预览</title>
+<title>企业官网</title>
 <style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif;color:#172033;background:#fff;line-height:1.7}
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1160px,88%);margin:auto}
-.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.top .wrap{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{font-weight:800;font-size:18px}
-.nav{display:flex;gap:22px;font-size:14px;color:#526173;align-items:center}
-.nav .edit{padding:9px 14px;border:1px solid var(--line);border-radius:9px;background:#fff}
-.hero{background:linear-gradient(135deg,var(--primary) 0%,#0e2038 100%);color:white;padding:108px 0 92px}
-.hero small{display:inline-block;font-weight:700;letter-spacing:.14em;text-transform:uppercase;opacity:.78}
-.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.08;max-width:900px;margin:18px 0}
-.hero p{max-width:790px;font-size:18px;color:#e7edf5;margin:0 0 34px}
-.cta{display:inline-flex;align-items:center;padding:13px 22px;border-radius:10px;background:white;color:var(--primary);font-weight:800}
-.section{padding:78px 0}
-.eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;color:var(--primary)}
-h2{font-size:clamp(30px,4vw,42px);margin:8px 0 14px}
-.lead{max-width:760px;color:#627084}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}
-.card{border:1px solid var(--line);border-radius:18px;padding:30px;background:#fff;box-shadow:0 10px 30px rgba(15,23,42,.05)}
-.card span{display:inline-grid;width:36px;height:36px;border-radius:10px;place-items:center;background:var(--accent);color:var(--primary);font-weight:800}
-.card h3{font-size:20px;margin:18px 0 8px}
-.card p{color:#667386;margin:0}
-.about{background:#f8fafc}
-.contact{background:#101b30;color:#fff}
-.contact .lead{color:#cbd5e1}
-.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:30px}
-.contact-grid>div{border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px}
-.contact-grid small{display:block;color:#aebbd0;margin-bottom:6px}
-.contact-grid strong{font-size:16px}
-.footer{background:#08111f;color:#cbd5e1;padding:28px 0}
-.footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
-.footer a{color:#fff}
-.badge{font-size:11px;padding:3px 7px;border-radius:999px;border:1px solid rgba(255,255,255,.25);margin-left:5px}
-.notice{background:#eef4fb;border-bottom:1px solid #d8e3f1;padding:10px 0;font-size:13px;color:#526173}
-.notice .wrap{display:flex;justify-content:space-between;gap:12px;align-items:center}
-@media(max-width:760px){
-  .grid,.contact-grid{grid-template-columns:1fr}
-  .nav a:not(.edit){display:none}
-  .notice .wrap{display:block}
-}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif;color:#17243a;background:#fff}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,88%);margin:auto}.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid #e4eaf1}.top .wrap{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:900;font-size:19px}.nav{display:flex;gap:22px;align-items:center;font-size:14px}.nav .upgrade{background:var(--primary);color:#fff;padding:10px 15px;border-radius:10px;font-weight:800}.hero{min-height:650px;display:grid;place-items:center;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:480px;height:480px;border-radius:50%;background:rgba(255,255,255,.08);right:-120px;top:-120px}.hero .wrap{position:relative;z-index:2}.hero small{letter-spacing:.17em;font-weight:800;opacity:.76}.hero h1{font-size:clamp(48px,7vw,86px);line-height:1.03;max-width:950px;margin:18px 0 24px;letter-spacing:-.04em}.hero p{font-size:19px;line-height:1.8;max-width:760px;color:#eef4fb}.hero .cta{display:inline-flex;margin-top:24px;background:#fff;color:var(--primary);padding:14px 22px;border-radius:12px;font-weight:900}.section{padding:90px 0}.eyebrow{font-size:12px;letter-spacing:.17em;font-weight:900;color:var(--primary)}h2{font-size:clamp(34px,4vw,50px);margin:8px 0 14px}.lead{max-width:790px;font-size:17px;line-height:1.85;color:#637188}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}.card{border:1px solid #e1e7ef;border-radius:22px;padding:30px;background:#fff;box-shadow:0 12px 34px rgba(30,48,78,.06)}.card span{display:inline-grid;width:38px;height:38px;border-radius:11px;place-items:center;background:var(--soft);color:var(--primary);font-weight:900}.card h3{font-size:22px;margin:18px 0 8px}.card p{color:#68768a;line-height:1.7}.alt{background:#f7f9fc}.contact{background:#101c30;color:#fff}.contact .lead{color:#cbd5e1}.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:32px}.contact-grid>div{border:1px solid rgba(255,255,255,.14);border-radius:15px;padding:20px}.contact-grid small{display:block;color:#aebbd0;margin-bottom:6px}.footer{background:#091321;color:#cbd5e1;padding:26px 0}.footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer a{color:#fff}.support{font-size:13px;opacity:.9}.freebar{background:#eef4fb;border-bottom:1px solid #dce6f2;padding:10px 0;font-size:13px;color:#56667b}.freebar .wrap{display:flex;justify-content:space-between;gap:16px;align-items:center}.freebar a{font-weight:800;color:#223c62}@media(max-width:760px){.cards,.contact-grid{grid-template-columns:1fr}.nav a:not(.upgrade){display:none}.freebar .wrap{display:block}.hero{min-height:580px}}
 </style>
 </head>
 <body>
-<div class="notice"><div class="wrap"><span>这是企业官网预览页面，可返回修改企业资料。</span><a id="editTop" href="./">返回编辑</a></div></div>
-<header class="top"><div class="wrap"><a class="brand" href="./" id="brand">企业名称</a><nav class="nav"><a href="#about">关于我们</a><a href="#services">产品服务</a><a href="#contact">联系我们</a><a class="edit" id="editLink" href="./">修改网站</a></nav></div></header>
-
+<div class="freebar"><div class="wrap"><span>免费生成网站，可长期分享使用。</span><a id="edit" href="./">返回修改</a></div></div>
+<header class="top"><div class="wrap"><a class="brand" id="brand" href="#">企业名称</a><nav class="nav"><a href="#about">关于</a><a href="#services">产品服务</a><a href="#contact">联系</a><a class="upgrade" href="../contact.html">定制高级网站</a></nav></div></header>
 <main>
-<section class="hero"><div class="wrap"><small id="industry">企业服务</small><h1 id="headline">让客户更快了解您的企业。</h1><p id="intro">我们专注于稳定、专业的产品与服务。</p><a class="cta" href="#contact">立即咨询</a></div></section>
-
-<section class="section" id="about"><div class="wrap"><span class="eyebrow">ABOUT US</span><h2>关于我们</h2><p class="lead" id="aboutText">企业介绍</p></div></section>
-
-<section class="section about" id="services"><div class="wrap"><span class="eyebrow">PRODUCTS & SERVICES</span><h2>产品与服务</h2><div class="grid">
-<article class="card"><span>01</span><h3 id="s1">产品与解决方案</h3><p>展示企业主要产品、业务能力与适用场景。</p></article>
-<article class="card"><span>02</span><h3 id="s2">项目定制服务</h3><p>根据不同项目和客户需求提供专业支持。</p></article>
-<article class="card"><span>03</span><h3 id="s3">长期客户支持</h3><p>保持长期、清楚、方便联系的服务入口。</p></article>
-</div></div></section>
-
-<section class="section"><div class="wrap"><span class="eyebrow">SERVICE AREA</span><h2>服务区域</h2><p class="lead" id="market">本地及全国客户</p></div></section>
-
-<section class="section contact" id="contact"><div class="wrap"><span class="eyebrow" style="color:#a9c7ed">CONTACT</span><h2>联系我们</h2><p class="lead">欢迎就产品、服务与合作需求与我们联系。</p><div class="contact-grid" id="contactGrid"></div></div></section>
+<section class="hero"><div class="wrap"><small id="industry">企业服务</small><h1 id="headline">让客户一眼看懂你的企业。</h1><p id="intro">企业介绍</p><a href="#contact" class="cta">立即咨询</a></div></section>
+<section id="about" class="section"><div class="wrap"><span class="eyebrow">ABOUT</span><h2>关于我们</h2><p class="lead" id="aboutText"></p></div></section>
+<section id="services" class="section alt"><div class="wrap"><span class="eyebrow">PRODUCTS & SERVICES</span><h2>产品与服务</h2><div class="cards"><article class="card"><span>01</span><h3 id="s1"></h3><p>清晰展示企业核心业务、产品和服务内容。</p></article><article class="card"><span>02</span><h3 id="s2"></h3><p>面向真实客户需求提供专业项目支持。</p></article><article class="card"><span>03</span><h3 id="s3"></h3><p>提供稳定、长期、方便联系的服务入口。</p></article></div></div></section>
+<section class="section"><div class="wrap"><span class="eyebrow">SERVICE AREA</span><h2>服务区域</h2><p class="lead" id="market"></p></div></section>
+<section id="contact" class="section contact"><div class="wrap"><span class="eyebrow" style="color:#9ebee8">CONTACT</span><h2>联系我们</h2><p class="lead">欢迎就产品、服务和合作需求与我们联系。</p><div class="contact-grid" id="contactGrid"></div></div></section>
 </main>
-
-<footer class="footer"><div class="wrap"><span id="copyright">企业名称</span><a href="https://china.bb369tech.com/" target="_blank" rel="noopener noreferrer">技术支持：成都保堡智能科技有限公司 <span class="badge">Website Support</span></a></div></footer>
-
+<footer class="footer"><div class="wrap"><span id="copyright"></span><span class="support">免费企业官网工具 · <a href="https://china.bb369tech.com/" target="_blank" rel="noopener">成都保堡智能科技有限公司</a></span></div></footer>
 <script>
-(() => {
-  'use strict';
-  const q = new URLSearchParams(location.search).get('d');
-  const fallback = {
-    name:'示例企业', industry:'企业服务',
-    headline:'让客户更快了解您的企业。',
-    intro:'我们专注于稳定、专业的产品与服务。',
-    s1:'产品与解决方案', s2:'项目定制服务', s3:'长期客户支持',
-    market:'本地及全国客户', phone:'', email:'', address:'', style:'modern'
-  };
-
-  let v = fallback;
-  if(q){
-    try{ v = Object.assign({}, fallback, JSON.parse(decodeURIComponent(q))); }
-    catch(e){ console.warn('Invalid preview data'); }
-  }
-
-  const palettes = {
-    modern:{primary:'#163b68',accent:'#e9f1fb',line:'#dbe6f2'},
-    industrial:{primary:'#2e3946',accent:'#f0f2f4',line:'#d8dde3'},
-    trade:{primary:'#0c6964',accent:'#e9f7f5',line:'#d2ece9'},
-    professional:{primary:'#593d6d',accent:'#f5eff8',line:'#e8ddee'}
-  };
-  const p = palettes[v.style] || palettes.modern;
-  document.documentElement.style.setProperty('--primary', p.primary);
-  document.documentElement.style.setProperty('--accent', p.accent);
-  document.documentElement.style.setProperty('--line', p.line);
-
-  const text = (id,val) => { const el=document.getElementById(id); if(el) el.textContent=val || ''; };
-  text('brand',v.name); text('industry',v.industry); text('headline',v.headline);
-  text('intro',v.intro); text('aboutText',v.intro);
-  text('s1',v.s1); text('s2',v.s2); text('s3',v.s3); text('market',v.market);
-  text('copyright','© ' + new Date().getFullYear() + ' ' + v.name);
-  document.title = v.name + '｜' + v.industry;
-
-  const back = './?d=' + encodeURIComponent(JSON.stringify(v)) + '#builder';
-  document.getElementById('editLink').href = back;
-  document.getElementById('editTop').href = back;
-
-  const grid = document.getElementById('contactGrid');
-  const add = (label,value,href) => {
-    if(!value) return;
-    const box=document.createElement('div');
-    const small=document.createElement('small'); small.textContent=label;
-    const strong=document.createElement('strong');
-    if(href){
-      const a=document.createElement('a'); a.href=href; a.textContent=value; strong.appendChild(a);
-    } else strong.textContent=value;
-    box.append(small,strong); grid.appendChild(box);
-  };
-  add('服务区域',v.market);
-  add('联系电话',v.phone,v.phone ? 'tel:'+v.phone.replace(/\s+/g,'') : '');
-  add('公开邮箱',v.email,v.email ? 'mailto:'+v.email : '');
-  add('地址 / 服务地点',v.address);
-
-  if(!grid.children.length){
-    const box=document.createElement('div');
-    box.innerHTML='<small>联系信息</small><strong>请通过企业官方渠道联系我们</strong>';
-    grid.appendChild(box);
-  }
-})();
+(()=>{const raw=location.hash.startsWith('#site=')?location.hash.slice(6):'';let v={name:'示例企业',industry:'企业服务',headline:'让客户一眼看懂你的企业。',intro:'我们专注于稳定、专业的产品与服务。',s1:'产品与解决方案',s2:'项目定制服务',s3:'长期客户支持',market:'本地及全国客户',phone:'',email:'',address:'',style:'executive'};try{if(raw)v={...v,...JSON.parse(decodeURIComponent(raw))}}catch(e){}const themes={executive:['#142a47','#5278a0','#edf3f9'],industrial:['#22282f','#68737e','#f0f2f4'],luxury:['#4a2e4f','#9b7699','#f6eef6'],global:['#0b5860','#4ba4a2','#e8f6f5']};const t=themes[v.style]||themes.executive;document.documentElement.style.setProperty('--primary',t[0]);document.documentElement.style.setProperty('--secondary',t[1]);document.documentElement.style.setProperty('--soft',t[2]);const T=(id,val)=>{const e=document.getElementById(id);if(e)e.textContent=val||''};T('brand',v.name);T('industry',v.industry);T('headline',v.headline);T('intro',v.intro);T('aboutText',v.intro);T('s1',v.s1);T('s2',v.s2);T('s3',v.s3);T('market',v.market);T('copyright','© '+new Date().getFullYear()+' '+v.name);document.title=v.name+'｜'+v.industry;document.getElementById('edit').href='./#site='+encodeURIComponent(JSON.stringify(v));const g=document.getElementById('contactGrid');const add=(l,val,href)=>{if(!val)return;const d=document.createElement('div');const s=document.createElement('small');s.textContent=l;const b=document.createElement('strong');if(href){const a=document.createElement('a');a.href=href;a.textContent=val;b.appendChild(a)}else b.textContent=val;d.append(s,b);g.appendChild(d)};add('服务区域',v.market);add('联系电话',v.phone,v.phone?'tel:'+v.phone.replace(/\s+/g,''):'');add('公开邮箱',v.email,v.email?'mailto:'+v.email:'');add('地址 / 服务地点',v.address);if(!g.children.length){const d=document.createElement('div');d.innerHTML='<small>联系信息</small><strong>请通过企业官方渠道联系我们</strong>';g.appendChild(d)}})();
 </script>
 </body>
 </html>
